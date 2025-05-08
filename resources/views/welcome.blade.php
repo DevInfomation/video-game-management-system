@@ -1,6 +1,8 @@
 @extends('layouts.default')
 @section('content')
-    <h1 class="text-3xl font-bold underline text-white">
-      Hello world!
-    </h1>
+    <div class="m-auto mv-auto">
+        <div class="border rounded bg-white">
+            <p>test</p>
+        </div>
+    </div>
 @endsection
