@@ -1,0 +1,2 @@
+primary colour: #b0a485
+secondary colour: #473f31;
