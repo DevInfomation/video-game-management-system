@@ -18,8 +18,8 @@
                     <label class="mb-1">Password:</label>
                     <input class="border rounded-md p-2" type="password" name="password" placeholder="Enter password here...">
                 </div>
-                <div class="flex flex-col">
-                    <button class="text-white items-center bg-[#473f31] mt-3 p-2">Sign up</button>
+                <div class="grid grid-cols-1">
+                    <button class="text-white place-self-center bg-[#473f31] mt-4 p-2 pl-10 pr-10">Sign up</button>
                 </div>
             </div>
         </form>
