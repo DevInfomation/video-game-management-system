@@ -1,14 +1,18 @@
 <?php
 
+use Illuminate\Foundation\Auth\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SignupController;
 
 Route::get('/', function () {
-    return view('welcome');
+    $user = Auth::user();
+    return view('welcome', ['user' => $user]);
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $user = Auth::user();
+    return view('dashboard', ['user' => $user]);
 });
 
 Route::get('/signup', function() {
