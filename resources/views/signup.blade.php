@@ -2,6 +2,7 @@
 @section('content')
     <div class="flex justify-center items-center h-screen">
         <form action="#" method="POST">
+            @csrf
             <div class="bg-[#473f31] p-3 rounded-t-md">
                 <p class="text-center text-xl text-white">SIGN UP</p>
             </div>
@@ -18,8 +19,8 @@
                     <label class="mb-1">Password:</label>
                     <input class="border rounded-md p-2" type="password" name="password" placeholder="Enter password here...">
                 </div>
-                <div class="flex flex-col">
-                    <button class="text-white items-center bg-[#473f31] mt-3 p-2">Sign up</button>
+                <div class="grid grid-col-1">
+                    <button class="text-white place-self-center bg-[#473f31] mt-5 p-2 pl-10 pr-10">Sign up</button>
                 </div>
             </div>
         </form>
