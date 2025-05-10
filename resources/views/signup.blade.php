@@ -2,7 +2,7 @@
 @section('content')
     <div class="flex justify-center items-center h-screen">
         <form action="#" method="POST">
-            <div class="bg-[#473f31] p-3 rounded-t-md p-2">
+            <div class="bg-[#473f31] p-3 rounded-t-md">
                 <p class="text-center text-xl text-white">SIGN UP</p>
             </div>
             <div class="bg-[#b0a485] rounded-1 rounded-b-md p-36">
