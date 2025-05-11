@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,5 @@ Route::get('/login', function() {
 });
 
 Route::post('/signup', [SignupController::class, 'create'])->name('signup.submit');
+Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
+Route::post('/login', [LoginController::class, 'logout'])->name('logut.submit');
