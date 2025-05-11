@@ -23,9 +23,9 @@ class LoginController extends Controller
         return redirect('/dashboard');
     }
 
-    public function logut() {
+    public function logout() {
         auth()->logout();
-        return redirect('/signup');
+        return redirect('/login');
     }
     
     /**
