@@ -10,14 +10,13 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     public function login(Request $request) {
-        $auth = Auth::guard('admin');
         $requestedFields = $request->validate([
             'name' => 'string',
             'email' => 'required',
             'password' => 'required',
         ]);
 
-        if ($auth->attempt(['name' => $requestedFields['name'], 'email' => $requestedFields['email'], 'password' => $requestedFields['password']])) {
+        if (auth()->attempt(['name' => $requestedFields['name'], 'email' => $requestedFields['email'], 'password' => $requestedFields['password']])) {
             $request->session()->regenerate();
         }
 
@@ -25,8 +24,7 @@ class LoginController extends Controller
     }
 
     public function logut() {
-        $auth = Auth::guard('admin');
-        $auth->logout();
+        auth()->logout();
         return redirect('/signup');
     }
     
