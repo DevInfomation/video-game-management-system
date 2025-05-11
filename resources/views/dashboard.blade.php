@@ -4,7 +4,7 @@
         <img 
         src="{{asset('images/banners/banner-homepage.png')}}" 
         alt="banner image for the website"
-        class="absolute z-[-1] h-[40rem] w-full"
+        class="absolute z-[-1] h-[35rem] w-full"
         >
         <div class="grid grid-cols-2 min-h-[40rem]">
             <div class="flex justify-center self-center">
