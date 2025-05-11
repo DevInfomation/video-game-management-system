@@ -2,11 +2,34 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Login;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+    public function login(Request $request) {
+        $auth = Auth::guard('admin');
+        $requestedFields = $request->validate([
+            'name' => 'string',
+            'email' => 'required',
+            'password' => 'required',
+        ]);
+
+        if ($auth->attempt(['name' => $requestedFields['name'], 'email' => $requestedFields['email'], 'password' => $requestedFields['password']])) {
+            $request->session()->regenerate();
+        }
+
+        return redirect('/dashboard');
+    }
+
+    public function logut() {
+        $auth = Auth::guard('admin');
+        $auth->logout();
+        return redirect('/signup');
+    }
+    
     /**
      * Display a listing of the resource.
      */
