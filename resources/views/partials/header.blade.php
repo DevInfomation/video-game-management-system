@@ -18,7 +18,7 @@
             <i class="fa-solid fa-cart-shopping text-white text-xl mt-2"></i>
         </div> 
         <div class="flex justify-end">
-            <form action="#" method="POST">
+            <form action="{{route('logout.submit')}}" method="POST">
                 @csrf
                 <button class="text-white text-lg mt-1 mr-8 cursor-pointer">Logout</button>
             </form>
