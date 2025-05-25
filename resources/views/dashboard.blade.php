@@ -30,7 +30,7 @@
 
     <div class="">
         {{-- This button will be temporary --}}
-        <form action="#">
+        <form action="games-created" method="GET">
             <div class="flex justify-center mt-[2rem]">
                 <button class="bg-primary rounded-md p-3 hover:bg-secondary">Enter a game here</button>
             </div>

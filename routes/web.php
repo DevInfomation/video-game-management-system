@@ -20,6 +20,11 @@ Route::get('/signup', function() {
     return view('signup');
 });
 
+Route::get('/games-created', function() {
+    $user = Auth::user();
+    return view('pages.games-created', ['user' => $user]);
+})->name('games-created');
+
 Route::get('/login', function() {
     return view('login');
 });
