@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GameController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Auth;
@@ -32,3 +33,4 @@ Route::get('/login', function() {
 Route::post('/signup', [SignupController::class, 'create'])->name('signup.submit');
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout.submit');
+Route::post('/games-created', [GameController::class, 'store'])->name('game.submit');
