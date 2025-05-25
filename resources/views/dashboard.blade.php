@@ -27,4 +27,13 @@
             <button class="bg-primary ml-3 rounded-md p-3 hover:bg-secondary">Search</button>
         </form>
     </div>
+
+    <div class="">
+        {{-- This button will be temporary --}}
+        <form action="#">
+            <div class="flex justify-center mt-[2rem]">
+                <button class="bg-primary rounded-md p-3 hover:bg-secondary">Enter a game here</button>
+            </div>
+        </form>
+    </div>
 @endsection
