@@ -23,8 +23,8 @@
 
     <div class="flex justify-center">
         <form action="#">
-            <input class="bg-red-500 p-3 rounded-md w-96" type="text" placeholder="Search...">
-            <button class="bg-primary ml-3 rounded-md p-3 hover:bg-secondary">Search</button>
+            <input class="bg-primary p-3 rounded-md w-96" type="text" placeholder="Search...">
+            <button class="bg-primary ml-3 rounded-md p-3 hover:bg-secondary cursor-pointer">Search</button>
         </form>
     </div>
 
@@ -32,7 +32,7 @@
         {{-- This button will be temporary --}}
         <form action="games-created" method="GET">
             <div class="flex justify-center mt-[2rem]">
-                <button class="bg-primary rounded-md p-3 hover:bg-secondary">Enter a game here</button>
+                <button class="bg-primary rounded-md p-3 hover:bg-secondary cursor-pointer">Enter a game here</button>
             </div>
         </form>
     </div>
