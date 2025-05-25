@@ -21,7 +21,10 @@
         </div>
     </div>
 
-    <div class="container">
-
+    <div class="flex justify-center">
+        <form action="#">
+            <input class="bg-red-500 p-3 rounded-md w-96" type="text" placeholder="Search...">
+            <button class="bg-primary ml-3 rounded-md p-3 hover:bg-secondary">Search</button>
+        </form>
     </div>
 @endsection
