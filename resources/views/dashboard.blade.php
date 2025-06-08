@@ -36,4 +36,12 @@
             </div>
         </form>
     </div>
+
+    <div class="flex justify-center">
+        @foreach ($imageData as $data)
+            <p class="text-white">{{$data->id}}</p> 
+            <img src="{{asset('images/games/' . $data->image)}}" alt="" style="height: 100px; width: 150px;"> 
+            <p class="text-white">{{$data->title}}</p>
+        @endforeach
+    </div>
 @endsection

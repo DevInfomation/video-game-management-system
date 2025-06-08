@@ -12,10 +12,7 @@ Route::get('/', function () {
     return view('welcome', ['user' => $user]);
 });
 
-Route::get('/dashboard', function () {
-    $user = Auth::user();
-    return view('dashboard', ['user' => $user]);
-});
+Route::get('/dashboard', [GameController::class, 'show']);
 
 Route::get('/signup', function() {
     return view('signup');

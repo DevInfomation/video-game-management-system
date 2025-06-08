@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Game;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class GameController extends Controller
 {
@@ -29,6 +31,7 @@ class GameController extends Controller
     public function store(Request $request)
     {
         $incomingFields = $request->validate([
+            'image' => 'required|image|mimes:png,jpg,jpeg',
             'title' => 'required',
             'developer' => 'required',
             'publisher' => 'required',
@@ -36,6 +39,14 @@ class GameController extends Controller
             'published_year' => 'required',
             'price' => 'required',
         ]);
+
+
+        if ($request->file('image')) {
+            $file = $request->file('image');
+            $filename = date('YmdHi').$file->getClientOriginalName();
+            $file->move(public_path('/images/games'), $filename);
+            $incomingFields['image'] = $filename;
+        }
 
         Game::create($incomingFields);
         return redirect('/dashboard');
@@ -46,7 +57,12 @@ class GameController extends Controller
      */
     public function show(Game $game)
     {
-        //
+        $user = Auth::user();
+        $imageData = Game::all();
+        return view('/dashboard', [
+            'user' => $user,
+            'imageData' => $imageData,
+        ]);
     }
 
     /**
