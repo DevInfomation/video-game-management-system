@@ -10,6 +10,8 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
     --color-primary: #b0a485;
     --color-secondary: #473f31;
+    --color-footer: #29262a;
+    --color-footer-bottom: #211f1f;
 }
 
 .global-wallpaper {
