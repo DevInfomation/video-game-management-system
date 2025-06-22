@@ -27,6 +27,11 @@ Route::get('/login', function() {
     return view('login');
 });
 
+Route::get('/about-us', function() {
+    $user = Auth::user();
+    return view('pages.about-us', ['user' => $user]);
+});
+
 Route::post('/signup', [SignupController::class, 'create'])->name('signup.submit');
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout.submit');

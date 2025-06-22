@@ -40,7 +40,7 @@ class GameController extends Controller
             'price' => 'required',
         ]);
 
-
+        // Uploading the image and storing it. It fucking WORKS
         if ($request->file('image')) {
             $file = $request->file('image');
             $filename = date('YmdHi').$file->getClientOriginalName();
