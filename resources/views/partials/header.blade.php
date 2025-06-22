@@ -1,5 +1,5 @@
 @unless (Auth::check()) {{-- Check to see if the user is logged in --}}
-    <div class="grid grid-cols-2 border rounded-1 bg-black p-2">
+    <div class="sticky top-0 grid grid-cols-2 border rounded-1 bg-black p-2">
         <div class="w-1/2">
             <a href="/dashboard"><h2 class="text-white text-2xl ml-2 mt-1">Video Game Management System</h2></a>
         </div>
@@ -9,7 +9,7 @@
         </div> 
     </div>
 @else
-    <div class="grid grid-cols-3 border rounded-1 bg-black p-2">
+    <div class="sticky top-0 grid grid-cols-3 border rounded-1 bg-black p-2">
         <div class="w-full">
             <a href="/dashboard"><h2 class="text-white text-2xl ml-2 mt-1">Video Game Management System</h2></a>
         </div>

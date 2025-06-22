@@ -29,7 +29,7 @@
             </form>
         </div>
 
-        <div class="">
+        <div class="mb-30">
             {{-- This button will be temporary --}}
             <form action="games-created" method="GET">
                 <div class="flex justify-center mt-[2rem]">
@@ -37,28 +37,21 @@
                 </div>
             </form>
         </div>
-
-        {{-- <div class="flex justify-center">
+        <div class="grid grid-cols-4 mt-5 my-30">
             @foreach ($imageData as $data)
-                <p class="text-white">{{$data->id}}</p> 
-                <img src="{{asset('images/games/' . $data->image)}}" alt="" style="height: 100px; width: 150px;"> 
-                <p class="text-white">{{$data->title}}</p>
-            @endforeach
-        </div> --}}
-
-        @foreach ($imageData as $data)
-            <div class="grid grid-cols-4 mt-5">
-                <div class="">
-                    <img src="{{asset('images/games/' . $data->image)}}" alt="" style="width: 200px; height: 200px;">
-                    <div class="bg-primary w-[200px] rounded-b-md">
+                <div class="place-self-center" style="width: 350px; height: 450px;">
+                    <div>
+                        <img src="{{asset('images/games/' . $data->image)}}" alt="">
+                    </div>
+                    <div class="bg-primary w-full rounded-b-md py-2">
                         <p class="text-center text-white">{{$data->title}}</p>
-                        <div class="flex justify-around mt-3">
+                        <div class="flex justify-between px-5 mt-3">
                             <p class="text-white place-self-center">Price: {{$data->price}}</p>
                             <button class="text-white bg-secondary rounded-md p-2 pl-4 pr-4 cursor-pointer">Buy</button>
                         </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
+            @endforeach
+        </div>
     </div>
 @endsection
