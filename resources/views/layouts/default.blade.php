@@ -19,9 +19,10 @@
         @yield('content')
     </main>
     
-    <footer>
+    <footer class="bg-footer">
         @include('partials.footer')
     </footer>
     
+    <script src="https://kit.fontawesome.com/f7e1fa5e2e.js" crossorigin="anonymous"></script>
 </body>
 </html>
