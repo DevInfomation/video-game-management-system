@@ -24,5 +24,6 @@
     </footer>
     
     <script src="https://kit.fontawesome.com/f7e1fa5e2e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 </body>
 </html>
