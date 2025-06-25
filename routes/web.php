@@ -28,6 +28,7 @@ Route::get('/login', function() {
 });
 
 Route::get('/about-us', [GameController::class, 'showAboutUs']);
+Route::get('/games', [GameController::class, 'showGamesCategory']);
 
 Route::post('/signup', [SignupController::class, 'create'])->name('signup.submit');
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
