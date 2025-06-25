@@ -4,8 +4,8 @@
             <a href="/dashboard"><h2 class="text-white text-2xl ml-2 mt-1">Video Game Management System</h2></a>
         </div>
         <div class="flex justify-end">
-            <a href="/login"><p class="text-white text-lg mt-1 mr-8">Login</p></a>     
-            <a href="/signup"><p class="text-white text-lg mt-1">Signup</p></a>    
+            <a href="/login"><p class="text-white text-lg mt-1 mr-8 cursor-pointer">Login</p></a>     
+            <a href="/signup"><p class="text-white text-lg mt-1 cursor-pointer">Signup</p></a>    
         </div> 
     </div>
 @else
