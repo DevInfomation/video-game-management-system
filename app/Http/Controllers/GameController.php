@@ -88,4 +88,9 @@ class GameController extends Controller
     {
         //
     }
+
+    public function showAboutUs() {
+        $user = Auth::user();
+        return view('pages.about-us', ['user' => $user]);
+    }
 }
