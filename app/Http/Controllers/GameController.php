@@ -93,4 +93,10 @@ class GameController extends Controller
         $user = Auth::user();
         return view('pages.about-us', ['user' => $user]);
     }
+
+    public function showGamesCategory() {
+        $imageData = Game::all();
+        $user = Auth::user();
+        return view('pages.games-category', ['user' => $user, 'imageData' => $imageData]);
+    }
 }
