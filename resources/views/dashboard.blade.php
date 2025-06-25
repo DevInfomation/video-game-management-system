@@ -37,7 +37,7 @@
                 </div>
             </form>
         </div>
-        <div class="grid grid-cols-4 mt-5 my-30">
+        <div class="grid grid-cols-4 mt-5 my-15">
             @foreach ($imageData as $data)
                 <div class="place-self-center" style="width: 350px; height: 450px;">
                     <div>
@@ -52,6 +52,9 @@
                     </div>
                 </div>
             @endforeach
+        </div>
+        <div class="flex justify-center">
+            <button class="text-white bg-secondary rounded-md p-2 pl-4 pr-4 cursor-pointer">Browse</button>
         </div>
     </div>
 @endsection
