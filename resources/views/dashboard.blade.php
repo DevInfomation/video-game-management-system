@@ -57,7 +57,7 @@
             @endforeach
         </div>
         <div class="flex justify-center">
-            <button class="text-white bg-primary rounded-md p-2 pl-4 pr-4 cursor-pointer hover:bg-secondary">Browse</button>
+            <a href="/games"><button class="text-white bg-primary rounded-md p-2 pl-4 pr-4 cursor-pointer hover:bg-secondary">Browse</button></a>
         </div>
     </div>
 @endsection
