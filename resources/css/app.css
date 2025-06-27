@@ -20,3 +20,30 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.my-container .accordion.active .accordion-heading {
+    background: #473f31;
+    color: #fff;
+}
+
+.my-container .accordion.active .accordion-heading i {
+    color: #fff;
+    transform: rotate(180deg);
+    transition: transform 0.2s 0.1s;
+}
+
+.my-container .accordion.active .accordion-content {
+    display: block;
+}
+
+.my-container .accordion-content {
+    animation: animate 0.2s linear backwards;
+    line-height: 2;
+    transform-origin: top;
+}
+
+@keyframes animate {
+    0% {
+        transform: scaleY(0);
+    }
+}
