@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../../css/app.css">
     <script src="https://kit.fontawesome.com/f7e1fa5e2e.js" crossorigin="anonymous"></script>
     @vite('resources/css/app.css')
-    <title>Document</title>
+    @vite('resources/js/app.js')
+    <title>VGMS</title>
 </head>
 <body class="min-h-screen global-wallpaper">
     
