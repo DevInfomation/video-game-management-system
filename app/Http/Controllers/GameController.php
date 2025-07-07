@@ -99,4 +99,14 @@ class GameController extends Controller
         $user = Auth::user();
         return view('pages.games-category', ['user' => $user, 'imageData' => $imageData]);
     }
+
+    public function showSingleGame($id) {
+        // $game = Game::findOrFail($id);
+        // return view('pages.single-games', ['games' => $game]);
+        $game = Game::find($id);
+        $imageData = Game::all(); 
+        return view('pages.single-games', ['games' => $game, 'imageData' => $imageData]);
+
+    }
 }
+
