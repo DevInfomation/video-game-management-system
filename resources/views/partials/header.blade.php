@@ -23,5 +23,5 @@
                 <button class="text-white text-lg mt-1 mr-8 cursor-pointer">Logout</button>
             </form>
         </div> 
-    </div
+    </div>
 @endunless
